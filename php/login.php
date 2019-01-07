@@ -1,0 +1,31 @@
+<?php 
+	@ob_start();
+	session_start();
+?>
+<?php
+	/**Login**/
+	if(!isset($_SESSION))session_start();
+	include("conexion.php");
+    require("crypto.php");
+	$email=encrypt($_POST['email'],$key);
+	$pass=encrypt($_POST['password'],$key);
+	$check=$_POST['openss'];
+	$sql="SELECT * FROM usuarios WHERE Email='".$email."'";
+	$consulta=mysqli_query($conexion,$sql) or die("Error en la consulta");
+	if($consulta){
+		$datos=mysqli_fetch_array($consulta);
+		if($datos['Password']==$pass&&$datos['Activo']!=0){
+			$_SESSION['email']=$email;
+			$_SESSION['pass']=$pass;
+			$_SESSION['active']="1";
+			$_SESSION['type_user']=$datos['Tipo_Usuario'];	
+			$_SESSION['user']="1";	
+			$_SESSION['id']=$datos['Id_socio'];			
+			header("Location:../");
+		}else{
+			header("Location:../login/?error=1");
+		}
+	}else{
+		header("Location:../login/?error=1");
+	}
+?>

@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+.detalles{
+	height: auto;
+}
+div.cuenta{
+	height: auto;
+}
+.usuario{
+	float: left;
+}
+.socio{
+	float: right;
+}
+.info div{
+	height: auto;
+	color: #696763;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.info div span{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	font-style: normal;
+}
+div.txt-3{
+	text-align: center;
+	font-size: 30px;
+}
+div.libro_notify{
+	width: 100%;
+	background-color: ;
+	border: 1px solid #696763;
+}

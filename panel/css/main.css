@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**     clases especiales            **/
+.circulo {
+    border-radius: 50%!important;
+}
+.nav-up {
+    top: -70px;
+}
+.avatar-usuario{
+    height: 32px;
+    width: 32px;
+}
+.user-tool{
+    background-color: #fff!important;
+    position: static;
+    float: right;
+    right: 0;
+    padding: 0px;
+    min-width: 230px;
+    width: 10%;
+    margin: 0px;
+    text-align: left;
+}
+.user-tool ul li a{
+    margin-left: 10px;
+    color: #686972;
+    font-size: 20px;
+    font-family: 'Circular Std Book';
+}
+.hide{
+    display: none;
+}
+
+/**       Header         **/
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100%;
+    background-color: white!important;
+    height: 70px;
+    opacity: 100!important;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+main{
+  margin-top: 120px!important;
+}
+.header-top{
+
+    color: #333;
+    height: 50px;
+    background-color: #F0F0E9;
+}
+.header-middle{
+
+
+}
+ul li{
+    list-style: none!important;
+}
+.header-middle{
+    display: flex;
+    flex-direction: row;
+
+}
+.enlaces ul li a img{
+    vertical-align: middle;
+    border-style: none;
+
+}
+.header-middle .logo{
+    width: 10%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: #007bff;
+    font-weight: bold;
+}
+.header-footer{
+    height: 100px;
+    margin: 20px;
+}
+.header-top a{
+    float: left;
+    color: #696763;
+    margin: 10px 10px;
+}
+a{
+    text-decoration: none;
+}
+#rd-social{
+    font-size: 18px;
+    float: right;
+}
+#rd-social:hover{
+    color: #3B5999;
+}
+.logo{
+    float: left;
+}
+.enlaces{
+    width: 10%;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: auto;
+    text-align: right;
+    float: right;
+}
+.enlaces a{
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+#user{
+    cursor: pointer!important;
+}
+.enlaces ul li a:hover{
+    cursor: pointer;
+}
+.header-footer ul li{
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+.header-footer ul li a{
+    color: #696763;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-footer ul li a:hover{
+    color: #FF5722;
+}
+.header-footer .buscar{
+    font-family: 'Mukta', sans-serif;
+    background-color: #F0F0E9;
+    float: right;
+    height: 30px;
+    border: 0;
+    font-size: 16px;
+}
+@keyframes expandir{
+    0%{height: 0%;}
+    50%{height: 50%;}
+    100%{height: 100%;}
+}
+.menu-movil{
+    animation: expandir 3s erase  alternate ;
+
+    float: left;
+    width: 100%;
+    height: 250px;
+    display: none;
+}
+.menu-list{
+
+}
+.menu-movil a{
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #696763;
+}
+.menu-movil ul{
+    animation-name: expandir;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    float: left;
+    width: 100%;
+    height: 250px;
+    background-color: #333;
+}
+.menu-movil ul li{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    border: 2px;
+}
+.mostrar_a{
+    height: 100%;
+}
+.mod-contenedor{
+  padding: auto;
+  text-align: left;
+  height: 65vh!important;
+  overflow-y:scroll!important;
+}
+.logo img{
+    width: 100%;
+}
+
+/**       *Header         **/
+/**          MAIN               **/
+.breadcrumb li{
+    margin-right: 5px;
+}
+.logo .logo_txt{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: #80D8FF ;
+}
+
+/**       Panel          **/
+main h1{
+    text-align: center;
+}
+.card{
+    height: 300px!important;
+}
+.tarjetas ul li div{
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: 250px;
+    height: 230px;
+}
+.tarjetas ul{
+    list-style: none;
+}
+.tarjetas ul li{
+    margin-left: 10%;
+    float: left;
+}
+.card-body i{
+    font-size: 50px;
+}
+.tarjetas{
+    text-align: center;
+}
+.nuevo-post{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    height: 140vh;
+    width: auto;
+    background-color: #fff;
+    margin-top: 70px;
+}
+.hide1{
+    display: none;
+}

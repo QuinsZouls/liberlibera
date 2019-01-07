@@ -1,0 +1,46 @@
+@media (min-width: 768px)and(max-width: 1199px){ 
+}
+
+@media (max-width: 767px){
+    .menu-movil{
+        display: block;
+    }
+    .menu-movil ul li a{
+        width: 100%;
+        color: white;
+    }
+    .menu-movil ul li{
+        width: 100%;
+    }
+    .menu-movil ul{
+        display: none;
+    }
+    .menu-pc{
+        display: none;
+    }
+    .enlaces{
+        text-align: left;
+        width: 100%;
+    }
+    .enlaces a{
+        float: right;
+        text-align: center;
+         margin-left: 50%;
+        margin-bottom: 10px;;
+    }
+    .tarjetas ul li{
+        margin-left: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    .tarjetas ul li div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+}
+ 
+@media (max-width: 480px){
+    
+}
